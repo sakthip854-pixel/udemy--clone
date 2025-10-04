@@ -197,10 +197,36 @@ body {
   position: absolute;
   cursor: pointer;
   top: 100;
-  z-index: 99;
+  z-index: 1;
   background-color: white;
 }
 
 .mylearning:hover .mylearning__popup {
   display: block;
+}
+.navbar__s4 {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .categories {
+    display: none;
+  }
+  .navbar__s3 {
+    display: none;
+  }
+  .saleimage {
+    display: none;
+  }
+  .navbar__s4 {
+    display: block;
+    padding-right: 20px;
+  }
+  .course-card {
+    margin-top: 10px;
+  }
 }
