@@ -52,6 +52,13 @@ body {
   border-radius: 30px;
   gap: 4px;
 }
+.categories p:hover {
+  background-color: white;
+  border: solid purple 1px;
+  transition-duration: 1s;
+  cursor: pointer;
+  color: black;
+}
 .navbar-s3__links {
   display: flex;
   justify-content: space-around;
@@ -77,9 +84,23 @@ body {
   border: black 1px solid;
   padding: 2%;
   position: relative;
-  bottom: 250px;
+  bottom: 300px;
   left: 50px;
   width: fit-content;
+  opacity: 0;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .container {
   padding-top: 10px;
